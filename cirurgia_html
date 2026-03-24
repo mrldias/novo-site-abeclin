@@ -1,0 +1,268 @@
+cirurg_header = shared_header.replace('{ENDO_CURRENT}','').replace('{OFTAL_CURRENT}','').replace('{CIRURG_CURRENT}',' aria-current="page"')
+
+cirurgia_html = f'''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cirurgião Plástico em Guarulhos | Procedimentos Estéticos e Reconstrutivos – ABECLIN</title>
+  <meta name="description" content="Cirurgia plástica em Guarulhos com segurança e resultado natural. Lipoaspiração, abdominoplastia, mamoplastia, rinoplastia e mais. Agende sua avaliação pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.abeclin.com.br/cirurgia-plastica.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Cirurgião Plástico em Guarulhos – ABECLIN">
+  <meta property="og:description" content="Lipoaspiração, abdominoplastia, mamoplastia, rinoplastia em Guarulhos. Avaliação personalizada. Agende pelo WhatsApp.">
+  <meta property="og:url"         content="https://www.abeclin.com.br/cirurgia-plastica.html">
+  <meta property="og:image"       content="https://www.abeclin.com.br/images/cirurgiao-plastico-abeclin-guarulhos.jpg">
+
+  <!-- TRACKING: copiar o mesmo bloco de pixels do index.html aqui -->
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "MedicalWebPage",
+        "@id": "https://www.abeclin.com.br/cirurgia-plastica.html",
+        "name": "Cirurgião Plástico em Guarulhos – ABECLIN",
+        "url": "https://www.abeclin.com.br/cirurgia-plastica.html",
+        "about": {{ "@type": "MedicalSpecialty", "name": "PlasticSurgery" }},
+        "isPartOf": {{ "@id": "https://www.abeclin.com.br/#website" }}
+      }},
+      {{
+        "@type": "Service",
+        "name": "Cirurgia Plástica em Guarulhos",
+        "serviceType": "Cirurgia Plástica",
+        "provider": {{ "@id": "https://www.abeclin.com.br/#clinic" }},
+        "areaServed": {{ "@type": "City", "name": "Guarulhos", "addressRegion": "SP" }},
+        "description": "Procedimentos de cirurgia plástica estética e reconstrutiva em Guarulhos: lipoaspiração, abdominoplastia, mamoplastia, rinoplastia, blefaroplastia e outros.",
+        "url": "https://www.abeclin.com.br/cirurgia-plastica.html",
+        "hasOfferCatalog": {{
+          "@type": "OfferCatalog",
+          "name": "Procedimentos de Cirurgia Plástica",
+          "itemListElement": [
+            {{ "@type": "Offer", "itemOffered": {{ "@type": "Service", "name": "Lipoaspiração" }} }},
+            {{ "@type": "Offer", "itemOffered": {{ "@type": "Service", "name": "Abdominoplastia" }} }},
+            {{ "@type": "Offer", "itemOffered": {{ "@type": "Service", "name": "Mamoplastia" }} }},
+            {{ "@type": "Offer", "itemOffered": {{ "@type": "Service", "name": "Rinoplastia" }} }},
+            {{ "@type": "Offer", "itemOffered": {{ "@type": "Service", "name": "Blefaroplastia" }} }}
+          ]
+        }}
+      }}
+    ]
+  }}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{cirurg_header}
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-cirurg-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <nav aria-label="Breadcrumb" class="breadcrumb" style="color:rgba(255,255,255,.7);margin-bottom:1rem;">
+            <a href="index.html" style="color:rgba(255,255,255,.8);">ABECLIN</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Cirurgia Plástica</span>
+          </nav>
+          <span class="hero-badge">Cirurgia Plástica • Guarulhos, SP</span>
+          <h1 id="hero-cirurg-heading">Cirurgia plástica em Guarulhos — resultado natural, segurança em primeiro lugar</h1>
+          <p>Cada corpo tem uma história. Cada procedimento, um propósito. Na ABECLIN, a cirurgia plástica é realizada com rigor técnico, ética médica e atenção ao que você realmente quer alcançar.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20de%20cirurgia%20plástica." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar avaliação gratuita</a>
+            <a href="#procedimentos" class="btn btn-outline btn-lg">Ver procedimentos</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/cirurgiao-plastico-abeclin-guarulhos.jpg" alt="Cirurgião plástico da ABECLIN em Guarulhos — consulta de avaliação" width="600" height="450" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O MÉDICO -->
+    <section class="section" aria-labelledby="medico-cirurg-heading">
+      <div class="container doctor-profile">
+        <div class="doctor-photo">
+          <img src="images/cirurgiao-plastico-consultorio-guarulhos.jpg" alt="Cirurgião plástico em consultório na ABECLIN Guarulhos" width="340" height="453" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <span class="eyebrow">Especialista</span>
+          <h2 id="medico-cirurg-heading">Cirurgião Plástico — ABECLIN Guarulhos</h2>
+          <span class="specialty-badge">Cirurgia Plástica Estética e Reconstrutiva</span>
+          <p>Membro da Sociedade Brasileira de Cirurgia Plástica (SBCP), nosso especialista combina formação técnica de alto nível com um olhar estético criterioso. Cada avaliação é personalizada — sem pressa, sem pressão, com clareza absoluta sobre indicações, riscos e resultados realistas.</p>
+          <p>Nenhum procedimento é indicado sem que o paciente compreenda completamente o que esperar. Segurança e honestidade são inegociáveis.</p>
+          <div class="doctor-meta">
+            <div class="meta-badge"><strong>CRM:</strong> INSERIR</div>
+            <div class="meta-badge"><strong>RQE:</strong> INSERIR</div>
+            <div class="meta-badge">Membro SBCP</div>
+          </div>
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20de%20cirurgia%20plástica." class="btn btn-wa" target="_blank" rel="noopener">💬 Agendar avaliação</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCEDIMENTOS -->
+    <section class="section section-alt" id="procedimentos" aria-labelledby="proc-cirurg-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Cirurgia Plástica</span>
+          <h2 id="proc-cirurg-heading">Procedimentos realizados</h2>
+          <p>Estética refinada com segurança cirúrgica. Cada procedimento é planejado individualmente para o seu perfil.</p>
+        </header>
+        <div class="proc-grid">
+          <article class="proc-card">
+            <h3>✂️ Lipoaspiração em Guarulhos</h3>
+            <p>Remove depósitos localizados de gordura resistentes à dieta e ao exercício, remodelando o contorno corporal com precisão. Indicada para abdômen, flancos, coxas, braços e costas.</p>
+            <div class="proc-tip">Ideal para pacientes próximos ao peso ideal com gordura localizada persistente.</div>
+          </article>
+          <article class="proc-card">
+            <h3>🏋️ Abdominoplastia</h3>
+            <p>Remove o excesso de pele e gordura do abdômen e corrige a diástase dos retos abdominais — separação muscular frequente após gestações. Resultado: abdômen mais firme, plano e definido.</p>
+            <div class="proc-tip">Frequentemente combinada com lipoaspiração para resultados mais completos.</div>
+          </article>
+          <article class="proc-card">
+            <h3>🔷 Mamoplastia</h3>
+            <p><strong>Aumento:</strong> implantes de silicone de alta coesividade para equilibrar proporções.<br>
+            <strong>Redução:</strong> alivia dores nas costas e ombros — pode ser coberta pelo convênio.<br>
+            <strong>Mastopexia:</strong> levantamento para correção da ptose mamária.</p>
+          </article>
+          <article class="proc-card">
+            <h3>👃 Rinoplastia em Guarulhos</h3>
+            <p>Remodelag do nariz com harmonia em relação ao restante do rosto — fins estéticos ou funcionais (desvio de septo). Planejamento com análise facial detalhada e simulação do resultado.</p>
+            <div class="proc-tip">Associada a septoplastia quando há desvio que compromete a respiração.</div>
+          </article>
+          <article class="proc-card">
+            <h3>👁️ Blefaroplastia</h3>
+            <p>Remove o excesso de pele e gordura das pálpebras, rejuvenescendo o olhar sem alterar a expressão natural do rosto. Alta taxa de satisfação pós-operatória.</p>
+            <div class="proc-tip">Pode ser coberta pelo convênio quando o excesso de pele prejudica o campo visual.</div>
+          </article>
+          <article class="proc-card">
+            <h3>➕ Outros procedimentos</h3>
+            <p>Otoplastia (orelha em abano) · Mentoplastia (queixo) · Lifting facial · Gluteoplastia · Reconstrução mamária · Cirurgia pós-bariátrica</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- A CONSULTA -->
+    <section class="section" aria-labelledby="consulta-heading">
+      <div class="container split-section">
+        <div class="split-text">
+          <span class="eyebrow">Avaliação presencial</span>
+          <h2 id="consulta-heading">A consulta que define tudo</h2>
+          <p>Nenhum procedimento é indicado sem uma avaliação presencial completa. Não existe cirurgia segura sem esse passo — e não existe resultado satisfatório sem comunicação honesta entre médico e paciente.</p>
+          <p>Na sua avaliação, o cirurgião:</p>
+          <ul>
+            <li>Ouve seus objetivos e expectativas com atenção</li>
+            <li>Avalia seu estado de saúde geral e histórico clínico</li>
+            <li>Explica o que pode ser realizado com segurança</li>
+            <li>Apresenta resultados de casos semelhantes</li>
+            <li>Detalha todas as etapas: pré-op, cirurgia e recuperação</li>
+          </ul>
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20de%20cirurgia%20plástica." class="btn btn-wa" style="margin-top:1.25rem;" target="_blank" rel="noopener">💬 Quero agendar minha avaliação</a>
+        </div>
+        <div class="split-img">
+          <img src="images/consulta-cirurgia-plastica-guarulhos.jpg" alt="Médico cirurgião plástico explicando procedimento ao paciente em consultório — ABECLIN Guarulhos" width="560" height="480" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS E PARTICULAR -->
+    <section class="section section-accent" aria-labelledby="planos-cirurg-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Convênios e particular</span>
+          <h2 id="planos-cirurg-heading">Planos de saúde e pagamento particular</h2>
+          <p>Alguns procedimentos reconstrutivos e funcionais podem ter cobertura pelo convênio.</p>
+        </header>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:780px;margin:0 auto;">
+          <div class="card"><div class="card-body">
+            <h3>✅ Podem ter cobertura pelo convênio</h3>
+            <ul style="display:flex;flex-direction:column;gap:.4rem;margin-top:.75rem;">
+              <li style="font-size:.93rem;">• Redução de mamas (gigantomastia)</li>
+              <li style="font-size:.93rem;">• Blefaroplastia funcional</li>
+              <li style="font-size:.93rem;">• Rinoplastia com desvio de septo</li>
+              <li style="font-size:.93rem;">• Reconstrução mamária pós-mastectomia</li>
+              <li style="font-size:.93rem;">• Cirurgia pós-bariátrica</li>
+            </ul>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>💳 Procedimentos estéticos (particular)</h3>
+            <ul style="display:flex;flex-direction:column;gap:.4rem;margin-top:.75rem;">
+              <li style="font-size:.93rem;">• Lipoaspiração estética</li>
+              <li style="font-size:.93rem;">• Abdominoplastia estética</li>
+              <li style="font-size:.93rem;">• Aumento de mamas</li>
+              <li style="font-size:.93rem;">• Rinoplastia estética</li>
+              <li style="font-size:.93rem;">• Outros procedimentos cosméticos</li>
+            </ul>
+          </div></div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20verificar%20a%20cobertura%20do%20meu%20convênio%20para%20cirurgia%20plástica." class="btn btn-primary" target="_blank" rel="noopener">📋 Verificar cobertura do meu convênio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-cirurg-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 id="faq-cirurg-heading">Perguntas sobre cirurgia plástica</h2>
+        </header>
+        <div class="faq-list">
+          <details>
+            <summary>Como é feita a avaliação pré-operatória?</summary>
+            <p>A avaliação inclui consulta clínica, solicitação de exames laboratoriais e, quando necessário, avaliação cardiológica e anestesiológica. O objetivo é garantir que você está em condições ideais de saúde para realizar o procedimento com segurança.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo dura a recuperação de uma cirurgia plástica?</summary>
+            <p>Depende do procedimento: Blefaroplastia: 7 a 14 dias. Lipoaspiração: 15 a 30 dias para atividades normais. Abdominoplastia e mamoplastia: 30 a 60 dias. O cirurgião informará os marcos de cada etapa na consulta.</p>
+          </details>
+          <details>
+            <summary>Os resultados são permanentes?</summary>
+            <p>Os resultados cirúrgicos são duradouros, mas não imunes ao envelhecimento natural e a mudanças de peso. Manter hábitos saudáveis potencializa e prolonga os resultados.</p>
+          </details>
+          <details>
+            <summary>A cirurgia plástica tem riscos?</summary>
+            <p>Todo procedimento cirúrgico envolve riscos. A escolha de um cirurgião certificado pela SBCP, a realização em ambiente hospitalar adequado e o seguimento das orientações pré e pós-operatórias são os principais fatores de segurança. Na consulta, todos os riscos são explicados com total transparência.</p>
+          </details>
+          <details>
+            <summary>Posso combinar dois procedimentos na mesma cirurgia?</summary>
+            <p>Em alguns casos, sim — desde que seja seguro do ponto de vista anestesiológico e clínico. Essa decisão é sempre do cirurgião, baseada na avaliação individual. Combinações comuns: lipoaspiração + abdominoplastia; rinoplastia + mentoplastia.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-banner" aria-labelledby="cta-cirurg-heading">
+      <div class="container">
+        <h2 id="cta-cirurg-heading">Dê o primeiro passo com segurança</h2>
+        <p>A decisão de fazer uma cirurgia plástica merece tempo, informação e um médico em quem você confie. Agende sua avaliação na ABECLIN — sem compromisso, sem pressão, com toda a atenção que você merece.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20de%20cirurgia%20plástica." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar avaliação pelo WhatsApp</a>
+          <a href="tel:+55INSERIRTELEFONE" class="btn btn-white btn-lg">📞 Ligar para a clínica</a>
+        </div>
+        <p style="margin-top:1.5rem;opacity:.75;font-size:.9rem;"><a href="index.html" style="color:rgba(255,255,255,.8);">← Voltar para a ABECLIN</a></p>
+      </div>
+    </section>
+
+  </main>
+
+{shared_footer}
+
+</body>
+</html>'''
+
+with open('output/abeclin/cirurgia-plastica.html', 'w', encoding='utf-8') as f:
+    f.write(cirurgia_html)
+print("cirurgia-plastica.html written:", len(cirurgia_html), "chars")
