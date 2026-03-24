@@ -1,0 +1,233 @@
+endo_header = shared_header.replace('{ENDO_CURRENT}',' aria-current="page"').replace('{OFTAL_CURRENT}','').replace('{CIRURG_CURRENT}','')
+
+endocrinologia_html = f'''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endocrinologista em Guarulhos | Dra. Edna Nakano – ABECLIN</title>
+  <meta name="description" content="Consulta com endocrinologista em Guarulhos. A Dra. Edna Nakano trata diabetes, tireoide, obesidade e síndrome metabólica. Aceita convênios. Agende pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.abeclin.com.br/endocrinologia.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Endocrinologista em Guarulhos | Dra. Edna Nakano – ABECLIN">
+  <meta property="og:description" content="Tratamento de diabetes, tireoide, obesidade e síndrome metabólica em Guarulhos. Agende pelo WhatsApp.">
+  <meta property="og:url"         content="https://www.abeclin.com.br/endocrinologia.html">
+  <meta property="og:image"       content="https://www.abeclin.com.br/images/dra-edna-nakano-endocrinologista.jpg">
+
+  <!-- TRACKING: copiar o mesmo bloco de pixels do index.html aqui -->
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "MedicalWebPage",
+        "@id": "https://www.abeclin.com.br/endocrinologia.html",
+        "name": "Endocrinologista em Guarulhos – ABECLIN",
+        "url": "https://www.abeclin.com.br/endocrinologia.html",
+        "about": {{ "@type": "MedicalSpecialty", "name": "Endocrinologia" }},
+        "isPartOf": {{ "@id": "https://www.abeclin.com.br/#website" }}
+      }},
+      {{
+        "@type": "Service",
+        "name": "Consulta de Endocrinologia em Guarulhos",
+        "serviceType": "Endocrinologia",
+        "provider": {{ "@id": "https://www.abeclin.com.br/#clinic" }},
+        "areaServed": {{ "@type": "City", "name": "Guarulhos", "addressRegion": "SP" }},
+        "description": "Consultas de endocrinologia com a Dra. Edna Nakano em Guarulhos. Tratamento de diabetes, tireoide, obesidade e síndrome metabólica.",
+        "url": "https://www.abeclin.com.br/endocrinologia.html"
+      }},
+      {{
+        "@type": "Physician",
+        "name": "Dra. Edna Shizuka Abe Nakano",
+        "medicalSpecialty": "Endocrinology",
+        "worksFor": {{ "@id": "https://www.abeclin.com.br/#clinic" }},
+        "image": "https://www.abeclin.com.br/images/dra-edna-nakano-endocrinologista.jpg",
+        "description": "Endocrinologista especializada em diabetes, tireoide, obesidade e síndrome metabólica."
+      }}
+    ]
+  }}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{endo_header}
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <nav aria-label="Breadcrumb" class="breadcrumb" style="color:rgba(255,255,255,.7);margin-bottom:1rem;">
+            <a href="index.html" style="color:rgba(255,255,255,.8);">ABECLIN</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Endocrinologia</span>
+          </nav>
+          <span class="hero-badge">Endocrinologia • Guarulhos, SP</span>
+          <h1 id="hero-heading">Endocrinologista em Guarulhos com atendimento que vai além do diagnóstico</h1>
+          <p>Diabetes, tireoide, obesidade, síndrome metabólica — condições que mudam a vida quando bem tratadas. A Dra. Edna Nakano oferece acompanhamento especializado, com escuta ativa e plano de tratamento feito para você.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20endocrinologia." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar com a Dra. Edna</a>
+            <a href="#condicoes" class="btn btn-outline btn-lg">Ver condições tratadas</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/dra-edna-nakano-endocrinologista.jpg" alt="Dra. Edna Shizuka Abe Nakano, endocrinologista em Guarulhos" width="600" height="450" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE A MÉDICA -->
+    <section class="section" aria-labelledby="medica-heading">
+      <div class="container doctor-profile">
+        <div class="doctor-photo">
+          <img src="images/dra-edna-nakano-consultorio.jpg" alt="Dra. Edna Nakano em seu consultório de endocrinologia na ABECLIN Guarulhos" width="340" height="453" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <span class="eyebrow">Especialista</span>
+          <h2 id="medica-heading">Dra. Edna Shizuka Abe Nakano</h2>
+          <span class="specialty-badge">Endocrinologia e Metabologia</span>
+          <p>A Dra. Edna Nakano dedica sua carreira ao cuidado das doenças endócrinas e metabólicas com uma abordagem que combina rigor científico e profunda humanidade. Para ela, tratar uma pessoa significa entender sua rotina, seus medos e suas possibilidades — não apenas seus exames.</p>
+          <p>Com anos de experiência clínica em Guarulhos e região, é referência no tratamento de diabetes tipo 1 e tipo 2, disfunções da tireoide, obesidade e síndrome metabólica, com protocolos atualizados e visão integrativa do paciente.</p>
+          <div class="doctor-meta">
+            <div class="meta-badge"><strong>CRM:</strong> INSERIR</div>
+            <div class="meta-badge"><strong>RQE:</strong> INSERIR</div>
+            <div class="meta-badge">Formação: INSERIR UNIVERSIDADE</div>
+          </div>
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20endocrinologia." class="btn btn-wa" target="_blank" rel="noopener">💬 Agendar consulta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDIÇÕES TRATADAS -->
+    <section class="section section-alt" id="condicoes" aria-labelledby="cond-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Endocrinologia</span>
+          <h2 id="cond-heading">Condições tratadas</h2>
+          <p>Diagnóstico preciso e acompanhamento contínuo para as principais doenças endócrinas e metabólicas.</p>
+        </header>
+        <div class="proc-grid">
+          <article class="proc-card">
+            <h3>🩸 Diabetes Mellitus (Tipo 1 e Tipo 2)</h3>
+            <p>Com acompanhamento correto, é totalmente possível viver com qualidade e segurança. Planos individualizados de controle glicêmico com orientação sobre alimentação, atividade física e medicação.</p>
+            <div class="proc-tip">⚠️ Sintomas: sede excessiva, urina frequente, cansaço sem causa aparente, cicatrização lenta.</div>
+          </article>
+          <article class="proc-card">
+            <h3>⚖️ Síndrome Metabólica</h3>
+            <p>Combinação de obesidade abdominal, pressão alta, colesterol elevado e resistência à insulina. Diagnóstico precoce e tratamento multidisciplinar fazem toda a diferença na prevenção cardiovascular.</p>
+          </article>
+          <article class="proc-card">
+            <h3>🦋 Disfunções da Tireoide</h3>
+            <p>Hipotireoidismo, hipertireoidismo, nódulos e tireoidite de Hashimoto. Avaliação precisa da função tireoidiana para tratamento eficaz e seguro a longo prazo.</p>
+            <div class="proc-tip">⚠️ Sintomas: cansaço, ganho ou perda de peso, queda de cabelo, alterações de humor.</div>
+          </article>
+          <article class="proc-card">
+            <h3>🏋️ Obesidade e Controle de Peso</h3>
+            <p>Obesidade é uma doença — não falta de força de vontade. Tratamento identifica causas hormonais e metabólicas, orienta intervenções eficazes e integra a equipe com nutricionistas quando necessário.</p>
+          </article>
+          <article class="proc-card">
+            <h3>🦴 Osteoporose</h3>
+            <p>A perda de massa óssea é silenciosa, mas tem diagnóstico e tratamento bem estabelecidos. Prevenção de fraturas e preservação da mobilidade, especialmente em mulheres após a menopausa.</p>
+          </article>
+          <article class="proc-card">
+            <h3>➕ Outros atendimentos</h3>
+            <p>Hipercolesterolemia · Resistência à insulina · Menopausa e climatério · Ginecomastia · Baixa estatura · Diabetes gestacional · Síndrome dos ovários policísticos (SOP)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" aria-labelledby="gal-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Nossa clínica</span>
+          <h2 id="gal-heading">Nossa equipe e nossos momentos</h2>
+          <p>Acreditamos que a relação médico-paciente se constrói além do consultório.</p>
+        </header>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/abeclin-evento-saude-1.jpg" alt="Evento de saúde promovido pela ABECLIN em Guarulhos" width="480" height="270" loading="lazy">
+            </div>
+            <div class="card-body"><p>Participamos de ações comunitárias e eventos de saúde que aproximam nossa equipe da comunidade de Guarulhos.</p></div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="images/abeclin-evento-saude-2.jpg" alt="Ação de saúde da ABECLIN com pacientes em Guarulhos" width="480" height="270" loading="lazy">
+            </div>
+            <div class="card-body"><p>Promovemos iniciativas educativas sobre saúde endócrinas e metabólica para a comunidade.</p></div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="images/abeclin-coral-natal.jpg" alt="Coral de Natal da equipe ABECLIN em Guarulhos" width="480" height="270" loading="lazy">
+            </div>
+            <div class="card-body"><p>Nossa equipe celebra datas especiais junto aos pacientes — porque cuidar é também criar vínculos de afeto.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" aria-labelledby="faq-endo-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 id="faq-endo-heading">Perguntas sobre endocrinologia</h2>
+        </header>
+        <div class="faq-list" role="list">
+          <details>
+            <summary>O que levar na primeira consulta com endocrinologista?</summary>
+            <p>Leve exames recentes de sangue (hemograma, glicemia, TSH, colesterol), laudos de exames de imagem se tiver, lista de medicamentos em uso e, se possível, um registro do histórico familiar de doenças hormonais ou metabólicas.</p>
+          </details>
+          <details>
+            <summary>Com que frequência preciso retornar ao endocrinologista?</summary>
+            <p>Depende da condição tratada. Pacientes com diabetes controlado geralmente retornam a cada 3 a 4 meses. Em situações de ajuste de tratamento ou diagnóstico recente, as consultas podem ser mais frequentes.</p>
+          </details>
+          <details>
+            <summary>O plano de saúde cobre consulta com endocrinologista?</summary>
+            <p>Sim, a maioria dos planos cobre consultas de Endocrinologia. A ABECLIN aceita mais de 18 convênios. Confirme o seu pelo WhatsApp antes de agendar.</p>
+          </details>
+          <details>
+            <summary>Endocrinologista trata obesidade?</summary>
+            <p>Sim. O endocrinologista avalia causas hormonais e metabólicas do ganho de peso, prescreve tratamentos clínicos e, quando indicado, encaminha para suporte nutricional ou avaliação cirúrgica.</p>
+          </details>
+          <details>
+            <summary>Quais exames pedem para avaliação da tireoide?</summary>
+            <p>Os exames mais comuns são TSH, T4 livre, T3 e, em alguns casos, anticorpos tireoidianos (anti-TPO, anti-Tg) e ultrassonografia da tireoide. A Dra. Edna avalia quais são necessários para cada paciente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-banner" aria-labelledby="cta-endo-heading">
+      <div class="container">
+        <h2 id="cta-endo-heading">Pronto para cuidar da sua saúde?</h2>
+        <p>Agende agora sua consulta com a Dra. Edna Nakano e dê o primeiro passo para um tratamento que respeita quem você é.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20endocrinologia." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar pelo WhatsApp</a>
+          <a href="tel:+55INSERIRTELEFONE" class="btn btn-white btn-lg">📞 Ligar para a clínica</a>
+        </div>
+        <p style="margin-top:1.5rem;opacity:.75;font-size:.9rem;"><a href="index.html" style="color:rgba(255,255,255,.8);">← Voltar para a ABECLIN</a></p>
+      </div>
+    </section>
+
+  </main>
+
+{shared_footer}
+
+</body>
+</html>'''
+
+with open('output/abeclin/endocrinologia.html', 'w', encoding='utf-8') as f:
+    f.write(endocrinologia_html)
+print("endocrinologia.html written:", len(endocrinologia_html), "chars")
