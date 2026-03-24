@@ -1,0 +1,277 @@
+oftal_header = shared_header.replace('{ENDO_CURRENT}','').replace('{OFTAL_CURRENT}',' aria-current="page"').replace('{CIRURG_CURRENT}','')
+
+oftalmologia_html = f'''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oftalmologista em Guarulhos | Dr. Claudio Nakano – Catarata e Cirurgia Refrativa | ABECLIN</title>
+  <meta name="description" content="Consulta com oftalmologista em Guarulhos. Dr. Claudio Nakano realiza cirurgia de catarata, cirurgia refrativa a laser e exames de rotina. Aceita convênios. Agende pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.abeclin.com.br/oftalmologia.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Oftalmologista em Guarulhos | Dr. Claudio Nakano – ABECLIN">
+  <meta property="og:description" content="Cirurgia de catarata, cirurgia refrativa e consultas oftalmológicas em Guarulhos. Agende pelo WhatsApp.">
+  <meta property="og:url"         content="https://www.abeclin.com.br/oftalmologia.html">
+  <meta property="og:image"       content="https://www.abeclin.com.br/images/dr-claudio-nakano-oftalmologista.jpg">
+
+  <!-- TRACKING: copiar o mesmo bloco de pixels do index.html aqui -->
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "MedicalWebPage",
+        "@id": "https://www.abeclin.com.br/oftalmologia.html",
+        "name": "Oftalmologista em Guarulhos – ABECLIN",
+        "url": "https://www.abeclin.com.br/oftalmologia.html",
+        "about": {{ "@type": "MedicalSpecialty", "name": "Oftalmologia" }},
+        "isPartOf": {{ "@id": "https://www.abeclin.com.br/#website" }}
+      }},
+      {{
+        "@type": "Service",
+        "name": "Consulta de Oftalmologia em Guarulhos",
+        "serviceType": "Oftalmologia",
+        "provider": {{ "@id": "https://www.abeclin.com.br/#clinic" }},
+        "areaServed": {{ "@type": "City", "name": "Guarulhos", "addressRegion": "SP" }},
+        "description": "Consultas de oftalmologia, cirurgia de catarata e cirurgia refrativa com o Dr. Claudio Nakano em Guarulhos.",
+        "url": "https://www.abeclin.com.br/oftalmologia.html"
+      }},
+      {{
+        "@type": "Physician",
+        "name": "Dr. Claudio G. Yuji Nakano",
+        "medicalSpecialty": "Ophthalmology",
+        "worksFor": {{ "@id": "https://www.abeclin.com.br/#clinic" }},
+        "image": "https://www.abeclin.com.br/images/dr-claudio-nakano-oftalmologista.jpg",
+        "description": "Oftalmologista especializado em cirurgia de catarata e cirurgia refrativa em Guarulhos."
+      }}
+    ]
+  }}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{oftal_header}
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-oftal-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <nav aria-label="Breadcrumb" class="breadcrumb" style="color:rgba(255,255,255,.7);margin-bottom:1rem;">
+            <a href="index.html" style="color:rgba(255,255,255,.8);">ABECLIN</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Oftalmologia</span>
+          </nav>
+          <span class="hero-badge">Oftalmologia • Guarulhos, SP</span>
+          <h1 id="hero-oftal-heading">Oftalmologista em Guarulhos — cuide da sua visão com quem entende</h1>
+          <p>Da consulta preventiva à cirurgia de catarata e correção refrativa, o Dr. Claudio Nakano oferece diagnóstico preciso, tecnologia moderna e atendimento que coloca o paciente em primeiro lugar.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20oftalmologia." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar com o Dr. Claudio</a>
+            <a href="#procedimentos" class="btn btn-outline btn-lg">Ver procedimentos</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/dr-claudio-nakano-oftalmologista.jpg" alt="Dr. Claudio G. Yuji Nakano, oftalmologista em Guarulhos" width="600" height="450" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O MÉDICO -->
+    <section class="section" aria-labelledby="medico-oftal-heading">
+      <div class="container doctor-profile">
+        <div class="doctor-photo">
+          <img src="images/dr-claudio-nakano-consultorio.jpg" alt="Dr. Claudio Nakano em seu consultório de oftalmologia na ABECLIN Guarulhos" width="340" height="453" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <span class="eyebrow">Especialista</span>
+          <h2 id="medico-oftal-heading">Dr. Claudio G. Yuji Nakano</h2>
+          <span class="specialty-badge">Oftalmologia</span>
+          <p>O Dr. Claudio Nakano é oftalmologista com sólida formação e ampla experiência em cirurgias oculares e doenças da visão. Reconhecido pelo cuidado detalhado na avaliação pré e pós-operatória, guia cada paciente com transparência — explicando diagnósticos, opções de tratamento e expectativas reais de resultado.</p>
+          <p>Atende pacientes de Guarulhos e região com foco em cirurgia de catarata, cirurgia refrativa e acompanhamento de doenças oculares crônicas.</p>
+          <div class="doctor-meta">
+            <div class="meta-badge"><strong>CRM:</strong> INSERIR</div>
+            <div class="meta-badge"><strong>RQE:</strong> INSERIR</div>
+            <div class="meta-badge">Formação: INSERIR UNIVERSIDADE</div>
+          </div>
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20oftalmologia." class="btn btn-wa" target="_blank" rel="noopener">💬 Agendar consulta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCEDIMENTOS -->
+    <section class="section section-alt" id="procedimentos" aria-labelledby="proc-oftal-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Oftalmologia</span>
+          <h2 id="proc-oftal-heading">Procedimentos e condições tratadas</h2>
+        </header>
+
+        <!-- Catarata com imagem -->
+        <div class="split-section" style="margin-bottom:4rem;">
+          <div class="split-text">
+            <span class="eyebrow">Cirurgia ocular</span>
+            <h3 style="font-size:1.5rem;font-weight:800;color:var(--neutral-900);margin-bottom:1rem;">Cirurgia de Catarata em Guarulhos</h3>
+            <p>A catarata é a opacificação do cristalino — a lente natural do olho — e é a principal causa de cegueira reversível no mundo. O tratamento é cirúrgico, seguro e altamente eficaz: o cristalino opaco é removido e substituído por uma lente intraocular (LIO) transparente, restaurando a nitidez da visão.</p>
+            <p>A cirurgia é rápida (em torno de 20 minutos por olho), realizada com anestesia local e sedação leve, e a melhora visual começa já nos primeiros dias.</p>
+            <ul>
+              <li>Visão embaçada ou turva</li>
+              <li>Sensibilidade excessiva à luz</li>
+              <li>Dificuldade para dirigir à noite</li>
+              <li>Percepção de halos ao redor de luzes</li>
+            </ul>
+            <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20cirurgia%20de%20catarata." class="btn btn-primary" style="margin-top:1rem;" target="_blank" rel="noopener">💬 Saber mais sobre catarata</a>
+          </div>
+          <div class="split-img">
+            <img src="images/olho-humano-com-catarata.jpg" alt="Ilustração de olho humano com catarata mostrando o cristalino opaco" width="560" height="420" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Lente Intraocular -->
+        <div class="split-section reverse" style="margin-bottom:4rem;">
+          <div class="split-img">
+            <img src="images/lente-intraocular-tamanho-real.jpg" alt="Lente intraocular em tamanho real usada na cirurgia de catarata — ABECLIN Guarulhos" width="560" height="420" loading="lazy">
+          </div>
+          <div class="split-text">
+            <span class="eyebrow">Tecnologia</span>
+            <h3 style="font-size:1.5rem;font-weight:800;color:var(--neutral-900);margin-bottom:1rem;">Lente Intraocular (LIO)</h3>
+            <p>Após a remoção do cristalino opacificado, uma lente intraocular é implantada para restaurar o foco da visão. O Dr. Claudio avalia qual tipo de lente é mais adequado para o estilo de vida de cada paciente:</p>
+            <ul>
+              <li><strong>Monofocal:</strong> visão nítida para uma distância (geralmente longe); coberta pela maioria dos convênios</li>
+              <li><strong>Multifocal:</strong> visão para longe e perto sem depender de óculos</li>
+              <li><strong>Tórica:</strong> corrige astigmatismo simultaneamente</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cirurgia Refrativa -->
+        <div class="split-section" style="margin-bottom:4rem;">
+          <div class="split-text">
+            <span class="eyebrow">Correção visual</span>
+            <h3 style="font-size:1.5rem;font-weight:800;color:var(--neutral-900);margin-bottom:1rem;">Cirurgia Refrativa em Guarulhos</h3>
+            <p>Dizer adeus aos óculos ou às lentes de contato é possível para a maioria dos pacientes com miopia, hipermetropia ou astigmatismo. A cirurgia refrativa utiliza laser de alta precisão para remodelar a córnea e corrigir o erro de refração de forma permanente.</p>
+            <ul>
+              <li>Idade mínima: 18 anos</li>
+              <li>Graduação estável há pelo menos 1 ano</li>
+              <li>Córneas com espessura adequada (avaliada no pré-op)</li>
+            </ul>
+          </div>
+          <div class="split-img">
+            <img src="images/simulacao-visao-cirurgia-refrativa.jpg" alt="Simulação comparativa da visão antes e depois da cirurgia refrativa a laser — ABECLIN Guarulhos" width="560" height="420" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Outros -->
+        <div class="proc-grid">
+          <article class="proc-card">
+            <h3>🔍 Consulta de Rotina e Prevenção</h3>
+            <p>Detecção precoce de glaucoma, degeneração macular e outras doenças silenciosas. Inclui acuidade visual, pressão intraocular, fundoscopia e refração para atualização de óculos.</p>
+            <div class="proc-tip">Recomendado anualmente para adultos acima de 40 anos.</div>
+          </article>
+          <article class="proc-card">
+            <h3>👁️ Outros atendimentos</h3>
+            <p>Glaucoma · Degeneração macular (DMRI) · Pterígio · Olho seco · Estrabismo (avaliação) · Uveíte · Blefaroplastia · Urgências oculares</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÓS-OPERATÓRIO -->
+    <section class="section" aria-labelledby="pos-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Recuperação</span>
+          <h2 id="pos-heading">Cuidados após a cirurgia ocular</h2>
+          <p>Seguir as orientações pós-operatórias é essencial para uma recuperação segura e resultado ideal.</p>
+        </header>
+        <div class="cards-grid">
+          <div class="card"><div class="card-body">
+            <h3>💊 Colírios</h3>
+            <p>Usar rigorosamente nos horários prescritos, sem pular doses. O esquema de colírios é fundamental para prevenir infecções e inflamação.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>🕶️ Proteção ocular</h3>
+            <p>Evitar esfregar os olhos. Use óculos escuros ao sair e protetor ocular ao dormir nas primeiras semanas.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>🏊 Água e ambiente</h3>
+            <p>Evitar contato de água não tratada com os olhos. Piscinas e praias só após liberação médica específica.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>🏃 Atividade física</h3>
+            <p>Aguardar liberação médica antes de retomar exercícios, especialmente os de alto impacto ou com risco de trauma ocular.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>📅 Retornos</h3>
+            <p>Comparecer a todas as consultas de revisão agendadas, mesmo sem sintomas. O acompanhamento pós-cirúrgico é parte do tratamento.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>🚨 Sinais de alerta</h3>
+            <p>Dor intensa, queda brusca de visão ou vermelhidão excessiva — contate a clínica imediatamente. Não aguarde o próximo retorno.</p>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" aria-labelledby="faq-oftal-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 id="faq-oftal-heading">Perguntas sobre oftalmologia</h2>
+        </header>
+        <div class="faq-list">
+          <details>
+            <summary>A cirurgia de catarata é coberta pelo plano de saúde?</summary>
+            <p>Na maioria dos casos, sim. A cirurgia com lente intraocular monofocal é coberta pelos principais convênios. Lentes premium (multifocais ou tóricas) podem ter cobertura parcial ou coparticipação. Confirme sua cobertura antes de agendar.</p>
+          </details>
+          <details>
+            <summary>Preciso parar de usar lentes de contato antes da consulta?</summary>
+            <p>Para exames de mapeamento pré-cirúrgico refrativo: lentes rígidas devem ser suspensas por 3 semanas; lentes gelatinosas, por 3 dias. Para consultas de rotina, não há restrição.</p>
+          </details>
+          <details>
+            <summary>A partir de que idade é indicado fazer consulta com oftalmologista?</summary>
+            <p>Desde a infância. Crianças devem ser avaliadas antes dos 3 anos para detectar estrabismo e ambliopia ("olho preguiçoso"). Adultos sem queixas devem consultar ao menos uma vez por ano após os 40 anos.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo leva a recuperação da cirurgia de catarata?</summary>
+            <p>A melhora visual começa em 24 a 48 horas. A recuperação completa leva entre 4 e 8 semanas, variando conforme o paciente e o tipo de lente utilizada.</p>
+          </details>
+          <details>
+            <summary>A cirurgia refrativa resolve astigmatismo?</summary>
+            <p>Sim. O LASIK e o PRK corrigem miopia, hipermetropia e astigmatismo. Para astigmatismo elevado, pode ser indicada uma lente fácica ou outra modalidade, avaliada na consulta pré-cirúrgica.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-banner" aria-labelledby="cta-oftal-heading">
+      <div class="container">
+        <h2 id="cta-oftal-heading">Sua visão merece o melhor cuidado</h2>
+        <p>Não espere os sintomas piorarem. Agende sua consulta com o Dr. Claudio Nakano e cuide da saúde dos seus olhos com quem tem experiência e dedicação.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20oftalmologia." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar pelo WhatsApp</a>
+          <a href="tel:+55INSERIRTELEFONE" class="btn btn-white btn-lg">📞 Ligar para a clínica</a>
+        </div>
+        <p style="margin-top:1.5rem;opacity:.75;font-size:.9rem;"><a href="index.html" style="color:rgba(255,255,255,.8);">← Voltar para a ABECLIN</a></p>
+      </div>
+    </section>
+
+  </main>
+
+{shared_footer}
+
+</body>
+</html>'''
+
+with open('output/abeclin/oftalmologia.html', 'w', encoding='utf-8') as f:
+    f.write(oftalmologia_html)
+print("oftalmologia.html written:", len(oftalmologia_html), "chars")
