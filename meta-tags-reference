@@ -1,0 +1,113 @@
+# Bloco de meta tags completo — para inserir no <head> de cada página
+# (substituindo os valores INSERIR pelos dados reais)
+
+meta_tags = '''<!-- ============================================================
+     BLOCO DE META TAGS COMPLETO – ABECLIN
+     Inserir no <head> de cada página, após o <title>
+     Substituir os valores entre [COLCHETES] pelos dados reais
+     ============================================================ -->
+
+<!-- ── ESSENCIAIS ─────────────────────────────────────────── -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Descrição e indexação -->
+<meta name="description"        content="[DESCRIÇÃO ÚNICA POR PÁGINA — máx. 155 caracteres]">
+<meta name="robots"             content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author"             content="ABECLIN – Clínica Médica">
+<meta name="generator"          content="">
+<link rel="canonical"           href="[URL COMPLETA DA PÁGINA]">
+
+<!-- Idioma e localização -->
+<meta name="language"           content="pt-BR">
+<meta name="geo.region"         content="BR-SP">
+<meta name="geo.placename"      content="Guarulhos">
+<meta name="geo.position"       content="[LATITUDE];[LONGITUDE]">
+<meta name="ICBM"               content="[LATITUDE], [LONGITUDE]">
+
+<!-- ── OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ───────────── -->
+<meta property="og:type"        content="website">
+<meta property="og:site_name"   content="ABECLIN">
+<meta property="og:title"       content="[TITLE DA PÁGINA]">
+<meta property="og:description" content="[DESCRIÇÃO — pode ser igual ao meta description]">
+<meta property="og:url"         content="[URL COMPLETA DA PÁGINA]">
+<meta property="og:image"       content="https://www.abeclin.com.br/images/[IMAGEM-OG].jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height"content="630">
+<meta property="og:image:alt"   content="[DESCRIÇÃO DA IMAGEM OG]">
+<meta property="og:locale"      content="pt_BR">
+
+<!-- ── TWITTER / X CARD ────────────────────────────────────── -->
+<meta name="twitter:card"       content="summary_large_image">
+<meta name="twitter:title"      content="[TITLE DA PÁGINA]">
+<meta name="twitter:description"content="[DESCRIÇÃO]">
+<meta name="twitter:image"      content="https://www.abeclin.com.br/images/[IMAGEM-OG].jpg">
+<meta name="twitter:image:alt"  content="[DESCRIÇÃO DA IMAGEM]">
+
+<!-- ── FAVICON E ÍCONES ────────────────────────────────────── -->
+<link rel="icon"             type="image/x-icon"  href="/favicon.ico">
+<link rel="icon"             type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon"             type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180"               href="/images/apple-touch-icon.png">
+<link rel="manifest"                                        href="/site.webmanifest">
+<meta name="theme-color"        content="#1a5c8a">
+<meta name="msapplication-TileColor" content="#1a5c8a">
+
+<!-- ── PARA BUSCADORES E IAs ───────────────────────────────── -->
+
+<!-- Google -->
+<meta name="google"             content="nositelinkssearchbox">
+<meta name="google-site-verification" content="[CÓDIGO DO GOOGLE SEARCH CONSOLE]">
+
+<!-- Bing / Copilot -->
+<meta name="msvalidate.01"      content="[CÓDIGO DO BING WEBMASTER TOOLS]">
+
+<!-- Clareza para IA sobre o tipo de conteúdo -->
+<meta name="classification"     content="Health, Medical">
+<meta name="category"           content="Clínica Médica, Endocrinologia, Oftalmologia, Cirurgia Plástica">
+<meta name="coverage"           content="Guarulhos, São Paulo, Brasil">
+<meta name="target"             content="all">
+<meta name="HandheldFriendly"   content="True">
+<meta name="MobileOptimized"    content="320">
+
+<!-- Dados de contato legíveis por IA (complementam o Schema.org) -->
+<meta name="contact"            content="[EMAIL DA CLÍNICA]">
+<meta name="reply-to"           content="[EMAIL DA CLÍNICA]">
+
+<!-- ── PRECONNECT E PERFORMANCE ────────────────────────────── -->
+<link rel="preconnect"  href="https://fonts.googleapis.com">
+<link rel="preconnect"  href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+<!-- ── TRACKING ─────────────────────────────────────────────
+     Colar os snippets abaixo nesta ordem:
+
+     1. Google Tag Manager (GTM) — substitui GA4 e outros pixels:
+        <!-- GTM HEAD SNIPPET (fornecido pelo GTM ao criar o container) -->
+
+     2. GA4 direto (apenas se NÃO usar GTM):
+        <!-- GA4: <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+
+     3. Meta Pixel (Facebook/Instagram Ads):
+        <!-- META PIXEL CODE -->
+
+     4. Google Ads Conversion Tag:
+        <!-- GOOGLE ADS GTAG SNIPPET -->
+
+     5. Clarity (Microsoft — heatmaps gratuitos):
+        <!-- MICROSOFT CLARITY SNIPPET -->
+─────────────────────────────────────────────────────── -->
+'''
+
+with open('output/abeclin/meta-tags-reference.html', 'w', encoding='utf-8') as f:
+    f.write(meta_tags)
+
+# Verificar todos os arquivos finais
+import os
+print("Arquivos gerados em output/abeclin/:\n")
+for fname in sorted(os.listdir('output/abeclin')):
+    fpath = f'output/abeclin/{fname}'
+    if os.path.isfile(fpath):
+        size = os.path.getsize(fpath)
+        print(f"  {fname:<35} {size:>8,} bytes")
