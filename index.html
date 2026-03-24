@@ -1,0 +1,468 @@
+
+index_html = '''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABECLIN – Clínica Médica em Guarulhos | Endocrinologia, Oftalmologia e Cirurgia Plástica</title>
+  <meta name="description" content="A ABECLIN oferece consultas com especialistas em Endocrinologia, Oftalmologia e Cirurgia Plástica em Guarulhos. Atendemos mais de 18 convênios. Agende pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.abeclin.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="ABECLIN – Clínica Médica em Guarulhos">
+  <meta property="og:description" content="Endocrinologia, Oftalmologia e Cirurgia Plástica em Guarulhos. Mais de 18 convênios aceitos.">
+  <meta property="og:url"         content="https://www.abeclin.com.br/">
+  <meta property="og:image"       content="https://www.abeclin.com.br/images/og-home.jpg">
+
+  <!-- ================================================
+       TRACKING — inserir aqui os snippets de analytics
+       ================================================
+       1. Google Tag Manager — colar o snippet <script> do GTM aqui:
+          <!-- GTM HEAD SNIPPET -->
+
+       2. GA4 (se usar direto, sem GTM) — colar a tag gtag.js aqui:
+          <!-- GA4 SNIPPET -->
+
+       3. Meta Pixel (Facebook/Instagram Ads):
+          <!-- META PIXEL SNIPPET -->
+
+       4. Google Ads Conversion Tag:
+          <!-- GOOGLE ADS SNIPPET -->
+
+       Obs.: nas páginas de serviço (endocrinologia.html, etc.)
+       basta copiar o mesmo bloco acima — todos os pixels
+       dispararão automaticamente via GTM.
+  ================================================ -->
+
+  <!-- Schema.org – WebSite + MedicalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.abeclin.com.br/#website",
+        "name": "ABECLIN",
+        "url": "https://www.abeclin.com.br/",
+        "description": "Clínica médica especializada em Endocrinologia, Oftalmologia e Cirurgia Plástica em Guarulhos, SP.",
+        "inLanguage": "pt-BR",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.abeclin.com.br/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.abeclin.com.br/#clinic",
+        "name": "ABECLIN",
+        "url": "https://www.abeclin.com.br/",
+        "logo": "https://www.abeclin.com.br/images/logo-abeclin.png",
+        "image": "https://www.abeclin.com.br/images/fachada-abeclin.jpg",
+        "description": "Clínica médica especializada em Endocrinologia, Oftalmologia e Cirurgia Plástica em Guarulhos.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "INSERIR ENDEREÇO COMPLETO",
+          "addressLocality": "Guarulhos",
+          "addressRegion": "SP",
+          "postalCode": "INSERIR CEP",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "INSERIR LATITUDE",
+          "longitude": "INSERIR LONGITUDE"
+        },
+        "telephone": "INSERIR TELEFONE",
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "12:00" }
+        ],
+        "medicalSpecialty": ["Endocrinology","Ophthalmology","PlasticSurgery"],
+        "priceRange": "$$",
+        "sameAs": [
+          "INSERIR URL INSTAGRAM",
+          "INSERIR URL FACEBOOK"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip navigation (acessibilidade WCAG 2.4.1) -->
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="ABECLIN – Página inicial">
+        <img src="images/logo-abeclin.png" alt="Logotipo ABECLIN" width="44" height="44">
+        <span class="logo-text">ABE<span>CLIN</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <nav id="main-nav" aria-label="Menu principal">
+        <ul role="list">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="endocrinologia.html">Endocrinologia</a></li>
+          <li><a href="oftalmologia.html">Oftalmologia</a></li>
+          <li><a href="cirurgia-plastica.html">Cirurgia Plástica</a></li>
+          <li><a href="#planos">Convênios</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="btn-wa btn btn-sm" target="_blank" rel="noopener">💬 Agendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-badge">Guarulhos, SP</span>
+          <h1 id="hero-heading">Cuidado médico especializado perto de você, em Guarulhos</h1>
+          <p>A ABECLIN reúne especialistas em Endocrinologia, Oftalmologia e Cirurgia Plástica sob o mesmo teto. Consultas presenciais, atendimento humanizado e mais de 18 convênios aceitos.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Agendar pelo WhatsApp</a>
+            <a href="#especialidades" class="btn btn-outline btn-lg">Nossas especialidades</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/clinica-recepcao-abeclin.jpg" alt="Recepção moderna da Clínica ABECLIN em Guarulhos" width="600" height="450" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section section-alt" aria-labelledby="sobre-heading">
+      <div class="container split-section">
+        <div class="split-img">
+          <img src="images/equipe-medica-abeclin.jpg" alt="Equipe médica da ABECLIN em Guarulhos — Dra. Edna e Dr. Claudio Nakano" width="560" height="640" loading="lazy">
+        </div>
+        <div class="split-text">
+          <span class="eyebrow">Quem somos</span>
+          <h2 id="sobre-heading">Medicina de excelência com atendimento humanizado</h2>
+          <p>A ABECLIN é uma clínica médica especializada, localizada em Guarulhos, dedicada a oferecer atendimento de excelência com profissionais altamente qualificados.</p>
+          <p>Nossa filosofia é simples: tratar cada paciente como único, ouvir com atenção e agir com responsabilidade.</p>
+          <blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;font-style:italic;color:var(--primary);">
+            "Ao cuidar de uma doença você pode ganhar ou perder. Ao cuidar de uma pessoa você sempre vence."
+          </blockquote>
+          <ul>
+            <li>Especialistas com formação sólida e anos de experiência</li>
+            <li>Atendimento individualizado e humanizado</li>
+            <li>Mais de 18 convênios aceitos</li>
+            <li>Localização conveniente em Guarulhos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section class="section" id="especialidades" aria-labelledby="espec-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Especialidades</span>
+          <h2 id="espec-heading">Nossas especialidades médicas</h2>
+          <p>Cada área conta com especialista dedicado, equipamentos adequados e acompanhamento completo do paciente.</p>
+        </header>
+        <div class="especialidades-grid">
+
+          <!-- Card Endocrinologia -->
+          <article class="espec-card">
+            <div class="espec-card-img">
+              <img src="images/endocrinologia-guarulhos.jpg" alt="Consulta de endocrinologia na ABECLIN em Guarulhos" width="480" height="320" loading="lazy">
+            </div>
+            <div class="espec-card-body">
+              <div class="espec-icon" aria-hidden="true">🩺</div>
+              <span class="card-tag">Endocrinologia</span>
+              <h3>Endocrinologia</h3>
+              <p>Diabetes, tireoide, obesidade e síndrome metabólica com acompanhamento especializado da Dra. Edna Nakano.</p>
+              <a href="endocrinologia.html" class="btn btn-ghost btn-sm">Conhecer a especialidade →</a>
+            </div>
+          </article>
+
+          <!-- Card Oftalmologia -->
+          <article class="espec-card">
+            <div class="espec-card-img">
+              <img src="images/oftalmologia-guarulhos.jpg" alt="Exame oftalmológico realizado na ABECLIN em Guarulhos" width="480" height="320" loading="lazy">
+            </div>
+            <div class="espec-card-body">
+              <div class="espec-icon" aria-hidden="true">👁️</div>
+              <span class="card-tag">Oftalmologia</span>
+              <h3>Oftalmologia</h3>
+              <p>Da consulta de rotina à cirurgia de catarata e refrativa, com diagnóstico preciso do Dr. Claudio Nakano.</p>
+              <a href="oftalmologia.html" class="btn btn-ghost btn-sm">Conhecer a especialidade →</a>
+            </div>
+          </article>
+
+          <!-- Card Cirurgia Plástica -->
+          <article class="espec-card">
+            <div class="espec-card-img">
+              <img src="images/cirurgia-plastica-guarulhos.jpg" alt="Consulta de cirurgia plástica na ABECLIN em Guarulhos" width="480" height="320" loading="lazy">
+            </div>
+            <div class="espec-card-body">
+              <div class="espec-icon" aria-hidden="true">✨</div>
+              <span class="card-tag">Cirurgia Plástica</span>
+              <h3>Cirurgia Plástica</h3>
+              <p>Procedimentos estéticos e reconstrutivos com segurança, critério clínico e resultado natural.</p>
+              <a href="cirurgia-plastica.html" class="btn btn-ghost btn-sm">Conhecer a especialidade →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section section-alt" aria-labelledby="dif-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+          <header>
+            <span class="eyebrow">Nossos diferenciais</span>
+            <h2 id="dif-heading">Por que nossos pacientes nos escolhem</h2>
+            <p style="margin-top:.75rem;">Cada detalhe do nosso atendimento foi pensado para que você se sinta seguro, acolhido e bem cuidado.</p>
+          </header>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🏅</div>
+              <div>
+                <h3>Especialistas de referência</h3>
+                <p>Médicos com formação sólida e anos de experiência clínica em suas áreas.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🤝</div>
+              <div>
+                <h3>Atendimento humanizado</h3>
+                <p>Cada consulta tem tempo para ouvir, explicar e orientar com clareza.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">📍</div>
+              <div>
+                <h3>Localização conveniente</h3>
+                <p>Fácil acesso em Guarulhos, com estacionamento próximo.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">💬</div>
+              <div>
+                <h3>Agendamento pelo WhatsApp</h3>
+                <p>Marque sua consulta de forma rápida e sem fila, direto pelo celular.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🏥</div>
+              <div>
+                <h3>Mais de 18 convênios aceitos</h3>
+                <p>Cobertura para a maioria dos planos de saúde da região.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS DE SAÚDE -->
+    <section class="section" id="planos" aria-labelledby="planos-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Convênios</span>
+          <h2 id="planos-heading">Seu convênio é bem-vindo aqui</h2>
+          <p>Aceitamos mais de 18 planos de saúde para que você tenha acesso ao melhor cuidado sem burocracia.</p>
+        </header>
+        <div class="planos-grid" role="list" aria-label="Lista de convênios aceitos">
+          <span class="plano-chip" role="listitem">Unimed</span>
+          <span class="plano-chip" role="listitem">Amil</span>
+          <span class="plano-chip" role="listitem">SulAmérica</span>
+          <span class="plano-chip" role="listitem">Bradesco Saúde</span>
+          <span class="plano-chip" role="listitem">Porto Seguro</span>
+          <span class="plano-chip" role="listitem">Notre Dame Intermédica</span>
+          <span class="plano-chip" role="listitem">Hapvida</span>
+          <span class="plano-chip" role="listitem">São Cristóvão</span>
+          <span class="plano-chip" role="listitem">Cassi</span>
+          <span class="plano-chip" role="listitem">Fusex</span>
+          <span class="plano-chip" role="listitem">Geap</span>
+          <span class="plano-chip" role="listitem">Mediservice</span>
+          <span class="plano-chip" role="listitem">Golden Cross</span>
+          <span class="plano-chip" role="listitem">Prevent Senior</span>
+          <span class="plano-chip" role="listitem">Saúde Caixa</span>
+          <span class="plano-chip" role="listitem">Omint</span>
+          <span class="plano-chip" role="listitem">Allianz Saúde</span>
+          <span class="plano-chip" role="listitem">Particular</span>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <p style="margin-bottom:1rem;">Não encontrou seu plano? Entre em contato — vamos verificar sua cobertura.</p>
+          <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20verificar%20se%20meu%20convênio%20é%20aceito." class="btn btn-wa" target="_blank" rel="noopener">💬 Verificar meu convênio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section section-alt" aria-labelledby="dep-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Depoimentos</span>
+          <h2 id="dep-heading">O que nossos pacientes dizem</h2>
+        </header>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>"Fui à ABECLIN com muito receio sobre meu diagnóstico de diabetes. A Dra. Edna foi incrivelmente paciente, explicou tudo com clareza e hoje me sinto muito mais segura no tratamento."</blockquote>
+            <cite>— Maria R., paciente de Endocrinologia</cite>
+          </div>
+          <div class="testimonial">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>"Fiz minha cirurgia de catarata com o Dr. Claudio e a recuperação foi muito mais tranquila do que eu esperava. Voltei a enxergar bem e me arrependo de ter esperado tanto."</blockquote>
+            <cite>— José A., paciente de Oftalmologia</cite>
+          </div>
+          <div class="testimonial">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>"Atendimento impecável do começo ao fim. Desde a marcação pelo WhatsApp até o pós-operatório, tudo muito bem organizado e com muito cuidado."</blockquote>
+            <cite>— Patricia M., paciente de Cirurgia Plástica</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section" id="contato" aria-labelledby="loc-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Localização</span>
+          <h2 id="loc-heading">Estamos em Guarulhos</h2>
+        </header>
+        <div class="localizacao-grid">
+          <div class="map-embed">
+            <!-- Substituir src pelo embed do Google Maps com o endereço real -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=INSERIR_EMBED_URL"
+              title="Localização da ABECLIN em Guarulhos no Google Maps"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="contact-info">
+            <h3>Entre em contato</h3>
+            <address>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">📍</span>
+                  <div><strong>Endereço</strong><span>INSERIR ENDEREÇO COMPLETO — Guarulhos, SP</span></div>
+                </li>
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">📞</span>
+                  <div><strong>Telefone</strong><a href="tel:+55INSERIRTELEFONE">INSERIR TELEFONE</a></div>
+                </li>
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">💬</span>
+                  <div><strong>WhatsApp</strong><a href="https://wa.me/55INSERIRTELEFONE" target="_blank" rel="noopener">INSERIR WHATSAPP</a></div>
+                </li>
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">✉️</span>
+                  <div><strong>E-mail</strong><a href="mailto:INSERIR@EMAIL.COM.BR">INSERIR@EMAIL.COM.BR</a></div>
+                </li>
+              </ul>
+            </address>
+            <div class="horarios" aria-label="Horários de funcionamento">
+              <h4>Horários de atendimento</h4>
+              <div class="horario-row"><span>Segunda a Sexta</span><span>08h – 18h</span></div>
+              <div class="horario-row"><span>Sábado</span><span>08h – 12h</span></div>
+              <div class="horario-row"><span>Domingo e Feriados</span><span>Fechado</span></div>
+            </div>
+            <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem;">
+              <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="btn btn-wa" target="_blank" rel="noopener">💬 Agendar pelo WhatsApp</a>
+              <a href="tel:+55INSERIRTELEFONE" class="btn btn-ghost">📞 Ligar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">ABE<span style="color:var(--accent)">CLIN</span></span>
+          <p>Clínica médica especializada em Guarulhos, SP. Endocrinologia, Oftalmologia e Cirurgia Plástica com atendimento humanizado.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Especialidades</h4>
+          <ul>
+            <li><a href="endocrinologia.html">Endocrinologia</a></li>
+            <li><a href="oftalmologia.html">Oftalmologia</a></li>
+            <li><a href="cirurgia-plastica.html">Cirurgia Plástica</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="index.html#sobre">Sobre a clínica</a></li>
+            <li><a href="index.html#planos">Convênios</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/55INSERIRTELEFONE" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="tel:+55INSERIRTELEFONE">Telefone</a></li>
+            <li><a href="mailto:INSERIR@EMAIL.COM.BR">E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ABECLIN. Todos os direitos reservados.</span>
+        <span>Guarulhos, SP — Brasil</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/55INSERIRTELEFONE?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+     class="whatsapp-float"
+     target="_blank" rel="noopener"
+     aria-label="Falar com a ABECLIN pelo WhatsApp">
+    💬
+  </a>
+
+  <!-- GTM noscript (colar snippet do GTM aqui) -->
+  <!-- <noscript>GTM NOSCRIPT IFRAME</noscript> -->
+
+  <script>
+    // Menu mobile toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('#main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>'''
+
+with open('output/abeclin/index.html', 'w', encoding='utf-8') as f:
+    f.write(index_html)
+print("index.html written:", len(index_html), "chars")
