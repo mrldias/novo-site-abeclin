@@ -1,0 +1,71 @@
+robots = '''# robots.txt – ABECLIN
+# https://www.abeclin.com.br/robots.txt
+
+User-agent: *
+Allow: /
+
+# Bloquear arquivos desnecessários para indexação
+Disallow: /images/og-*.jpg
+
+# Sitemap
+Sitemap: https://www.abeclin.com.br/sitemap.xml
+
+# -----------------------------------------------
+# Diretivas específicas para rastreadores de IA
+# (permitem indexação para busca com IA)
+# -----------------------------------------------
+
+# Google (Search + Gemini)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (base de dados usada por vários modelos de IA)
+User-agent: CCBot
+Allow: /
+'''
+
+with open('output/abeclin/robots.txt', 'w', encoding='utf-8') as f:
+    f.write(robots)
+print("robots.txt OK")
